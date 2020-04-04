@@ -1,2 +1,2 @@
 # mcpaint
- a minecraft styled paint board based on javascript
+ A minecraft styled painting board based on javascript.

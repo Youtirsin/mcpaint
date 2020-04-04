@@ -1,0 +1,107 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    user-select: none;
+}
+
+* {
+    font-family: Microsoft YaHei;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#container>div {
+    width: 900px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    background: #c6c6c6;
+    border: 5px solid;
+    border-color: white grey grey white;
+    border-radius: 5px;
+}
+
+#container>div>div {
+    height: 100%;
+}
+
+#control {
+    width: 30%;
+}
+
+#colorgroup,
+#actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#colorgroup {
+    height: 90%;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 40px;
+    border: 2.5px solid black;
+    border-radius: 2px;
+}
+
+.btn button {
+    width: 120px;
+    height: 40px;
+    background: #c6c6c6;
+    border: 2.5px solid;
+    border-color: white grey grey white;
+    outline: none;
+    border-radius: 2px;
+}
+
+.btn button:active {
+    border-color: grey white white grey;
+}
+
+#clear:hover {
+    border: 2.5px solid white;
+}
+
+#clear button:hover {
+    color: white;
+    background: #218306;
+    border: 2.5px solid;
+    border-color: #2ba30a black black #2ba30a;
+}
+
+#clear button:active {
+    border-color: black #2ba30a #2ba30a black;
+}
+
+#container>div>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#drawpanel {
+    background: white;
+    border: 4px solid;
+    border-color: grey rgb(216, 216, 216) rgb(216, 216, 216) grey;
+    width: 600px;
+    height: 600px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>史 提 达 芬 奇</title>
+    <script src="src/js/vue.min.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <div id='control'>
+                <div id="colorgroup">
+                    <div class='btn' v-for="color in colors"><button v-bind:style="{background:color}"
+                            v-on:click="currentColor=color"></button></div>
+                </div>
+                <div id="actions">
+                    <div class="btn" id="clear"><button v-on:click="clear">清除</button></div>
+                </div>
+            </div>
+            <div>
+                <div id="drawpanel">
+                    <canvas width="600" height="600" v-on:mousedown="pendown" v-on:mousemove="penmove"
+                        v-on:mouseup="penup" v-on:mouseout='penup'>
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
